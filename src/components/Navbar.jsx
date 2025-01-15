@@ -22,6 +22,9 @@ function Navbar(props) {
         <li className="nav-item">
           <Link className="nav-link" to="/about">About</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/service">Services</Link>
+        </li>
       </ul>
       <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
