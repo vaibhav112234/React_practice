@@ -50,7 +50,7 @@ function TextForm(props) {
    
 <div className=" container mb-3 my-3 " style={{color: props.mode==='dark'?'white':'black'}} >
   <label htmlFor="myBox" className="form-label">{props.heading}</label>
-  <textarea className="form-control" value={text} onChange={handleOnchange} style={{backgroundColor: props.mode==='dark'?'#000d1a':'white', color : props.mode==='dark'?'white':'black'}} id="myBox" placeholder ="Enter your text" rows="8"></textarea>
+  <textarea className="form-control" value={text} onChange={handleOnchange} style={{backgroundColor: props.mode==='dark'?'#000d1a':'white', color : props.mode==='dark'?'white':'black'}} id="myBox" placeholder="Enter your text" rows="8"></textarea>
   <button disabled={text.length===0} className='btn btn-primary my-3' onClick={handleUpClick}>Convert to uppercase</button>
   <button disabled={text.length===0} className='btn btn-primary my-3 mx-2' onClick={handleLoClick}>Convert to Lowercase</button>
   <button disabled={text.length===0} className='btn btn-primary my-3 mx-1' onClick={handleClearClick}>Clear the text</button>
@@ -59,7 +59,7 @@ function TextForm(props) {
 </div>
 <div className="container my-3" style={{color: props.mode==='dark'?'white':'black'}}>
   <h2>Your heading summary</h2>
-  <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} Words and {text.length} characters</p>
+  <p>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} Words and {text.length} characters</p>
   <h2>preview</h2>
   <p>{text}</p>
 

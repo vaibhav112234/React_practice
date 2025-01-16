@@ -4,7 +4,7 @@
 function Services() {
   return (
     <>
-       <div className="card">
+       <div className="card mb-3 my-3">
   <div className="card-header">
     Featured
   </div>

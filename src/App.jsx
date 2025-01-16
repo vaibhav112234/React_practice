@@ -46,15 +46,14 @@ function App() {
       <Route exact path="/about">
       <Route path="/about" element={<About />} />
       </Route>
-      <Route exact path="/" 
-    element={<TextForm showAlert={showAlert} heading="Enter your text to analyze" mode={mode} />} 
+      <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter your text to analyze" mode={mode} />} 
   />
     
     <Route exact path="/service">
       <Route path="/service" element={<Services />} />
       </Route>
       </Routes>
-    {/* <About/> */}
+    
     </Router>
     </>
   )
